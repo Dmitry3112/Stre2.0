@@ -27,7 +27,7 @@ public class Main {
                 break;
             }
 
-            String[] parts = input.split(" ");// "номер количество" -> ["номер", "количество"]
+            String[] parts = input.split(" ");
             int productNumber = Integer.parseInt(parts[0]) - 1;
             int productCont = Integer.parseInt(parts[1]);
             basket.addToCart(productNumber, productCont);
@@ -35,7 +35,7 @@ public class Main {
         }
         basket.printCart();
     }
-    //вывод корзины
+    
     public static void showPrice() {
         System.out.println("Список возможных товаров для покупки");
         int sum = 0;
